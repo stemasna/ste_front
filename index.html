@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+      integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles" />
+  </head>
+  <body>
+    <h1 id="titolo">AMMINISTRATORE</h1>
+    <button id="click-on-nuovo">AGGIUNGI UTENTE</button>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>UTENTI</th>
+          <!--<th>PASSWORD</th>-->
+          <th>COMANDI</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="overlay" id="chiedi-chiudo-overlay"></div>
+    <div class="modal" id="modal-modifica">
+      <h3>MODIFICA PERSONA</h3>
+      <label for="email">email</label>
+      <input type="text" name="email" />
+      <label for="password">password</label>
+      <input type="text" name="password" />
+      <div>
+        <button id="click-annulla">ANNULLA</button>
+        <button id="click-salva">SALVA</button>
+      </div>
+    </div>
+    <div class="modal" id="modal-nuovo">
+      <h3>AGGIUNGI NUOVA PERSONA</h3>
+      <label for="email">email</label>
+      <input type="text" name="email" placeholder="email" />
+      <label for="password">password</label>
+      <input type="text" name="password" placeholder="password" />
+      <div>
+        <button id="click-annulla">ANNULLA</button>
+        <button id="click-on-salva-nuovo">SALVA</button>
+      </div>
+    </div>
+
+    <script type="module" src="/main"></script>
+  </body>
+</html>
