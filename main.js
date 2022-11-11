@@ -112,6 +112,8 @@ function Annulla() {
     .querySelectorAll(".modal, .overlay")
     .forEach((modal) => (modal.style.display = "none"));
 }
+
+consolo.log("errroooooooo");
 function ChiediChiudiOverlay() {
   if (confirm("Vuoi annullare le modifiche?")) Annulla();
 }
