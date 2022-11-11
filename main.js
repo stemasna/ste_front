@@ -5,7 +5,8 @@ const container = document.querySelectorAll("tbody");
 document
   .getElementById("chiedi-chiudo-overlay")
   .addEventListener("click", ChiediChiudiOverlay);
-document.getElementById("click-annulla").addEventListener("click", Annulla);
+document.getElementById("click-annulla1").addEventListener("click", Annulla);
+document.getElementById("click-annulla2").addEventListener("click", Annulla);
 document.getElementById("click-salva").addEventListener("click", OnSalva);
 document.getElementById("click-on-nuovo").addEventListener("click", OnNuovo);
 document
