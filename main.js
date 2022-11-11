@@ -126,7 +126,7 @@ function OnSalva() {
   dati = dati.map((x) => (x.email == idModifica ? persona : x));
 
   fetch(
-    "https://backend-stage-ste.herokuapp.com/utenti/updateutente/:email" +
+    "https://backend-stage-ste.herokuapp.com/utenti/updateutente/" +
       idModifica,
     {
       method: "PUT",
